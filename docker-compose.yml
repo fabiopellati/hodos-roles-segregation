@@ -1,0 +1,10 @@
+services:
+  hodos-mcp:
+    image: ghcr.io/fabiopellati/hodos-mcp-operations:latest
+    ports:
+      - "${MCP_PORT:-3100}:3100"
+    volumes:
+      - "${OPERA_PATH:-.}:/opera"
+    environment:
+      - PORT=3100
+      - OPERA_ROOT=/opera
