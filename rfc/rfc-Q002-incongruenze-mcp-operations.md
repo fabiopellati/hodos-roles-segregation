@@ -76,6 +76,15 @@ QUESTIONE-001, scritto il 2026-04-24 ma datato
 `create_questione` ma è trasversale ai tool che
 scrivono date.
 
+**Conferma della causa**: le operazioni eseguite prima
+delle 02:00 ora locale (CEST, UTC+2) producono date
+del giorno precedente; le operazioni eseguite dopo le
+02:00 producono date corrette. Il container
+mcp-operations usa UTC anziché il fuso orario
+dell'ambiente operativo dell'utente. Il tool
+`close_questione` invocato alle 02:25 locali ha
+scritto la data corretta (2026-04-24) nel mastro.
+
 ## Motivazione
 
 I tool di mcp-operations sono il meccanismo primario con

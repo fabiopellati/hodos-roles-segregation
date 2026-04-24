@@ -193,13 +193,63 @@ visibile prima della delega.
 
 ## Response RFC
 
-**Data risposta**:
-**Stato**:
-**Da**:
-**A**:
+**Data risposta**: 2026-04-24
+**Stato**: accepted
+**Da**: Team hodos-enrichment / llm-roles-segregation
+**A**: Team Hodos / progetto hodos
 
 ### Decisione
 
+La richiesta è stata accettata e completata.
+L'arricchimento è stato progettato, redatto e
+distribuito nel knowledge base hodos-mcp.
+
 ### Lavoro svolto
 
+- Definito un catalogo di nove abilità discriminabili
+  (lettura/scrittura processo, documenti, artefatti;
+  comunicazione diretta, RFC, operatore) che
+  costituiscono le dimensioni atomiche della
+  segregazione
+- Progettato un meccanismo di configurazione nel
+  CLAUDE.md dell'opera: formato compatto (solo abilità
+  concesse, le altre negate per default), supporto per
+  preset richiamabili per nome e ruoli personalizzati
+- Definito il preset a due ruoli gov/ops come
+  combinazione pronta all'uso
+- Specificato il comportamento di segnalazione
+  bloccante: il modello si ferma quando le
+  informazioni nel perimetro non bastano, simulando
+  un attore remoto
+- Progettato il ciclo di verifica bidirezionale:
+  gov scrive documenti, ops esegue, gov verifica e
+  può scoprire lacune nei propri documenti
+- Definita la segregazione come modalità ambientale
+  attivabile e disattivabile a comando dell'operatore
+  durante la sessione
+- Redatti i due artefatti obbligatori (guida
+  informativa e skill operativo) e verificata la
+  congruenza con il protocollo base e gli
+  arricchimenti esistenti
+- Sorgente registrata e indicizzata in hodos-mcp
+  (tag v0.1.0, 2 artefatti)
+
 ### Deviazioni
+
+- I tre ruoli specifici della RFC (governance,
+  progettista, operations) non sono stati codificati
+  nell'arricchimento come ruoli predefiniti.
+  L'arricchimento definisce un meccanismo generico
+  con catalogo di abilità configurabili; i tre ruoli
+  della RFC sono una configurazione possibile, non
+  la specifica. Il preset consigliato usa due ruoli
+  (gov/ops) anziché tre, perché la sperimentazione
+  ha mostrato che la separazione a due livelli copre
+  il caso d'uso principale. Il terzo ruolo
+  (progettista) è configurabile dall'opera che ne
+  ha bisogno
+- Il prodotto durevole della simulazione non è un
+  registro di segnalazioni nei file di processo ma
+  la raffinazione delle direttive nel CLAUDE.md.
+  Le segnalazioni restano nel flusso conversazionale
+  per evitare rumore nel mastro

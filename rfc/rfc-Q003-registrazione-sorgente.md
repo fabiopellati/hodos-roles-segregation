@@ -1,7 +1,7 @@
 # RFC — QUESTIONE-003
 
 **Data**: 2026-04-24
-**Commit generazione**: bb8db23
+**Commit generazione**: 544f7d2
 **Da**: Team hodos-enrichment / llm-roles-segregation
 **A**: Team hodos / hodos-mcp
 **Questione di origine**: QUESTIONE-003 — Registrazione
@@ -91,13 +91,39 @@ Senza la registrazione della sorgente l'arricchimento
 
 ## Response RFC
 
-**Data risposta**:
-**Stato**:
-**Da**:
-**A**:
+**Data risposta**: 2026-04-24
+**Stato**: accepted
+**Da**: Team AI-MCP / hodos-mcp
+**A**: Team hodos-enrichment / llm-roles-segregation
 
 ### Decisione
 
+La richiesta di registrazione è stata accettata e
+completata. La sorgente `llm-roles-segregation` è
+operativa nel server hodos-mcp.
+
 ### Lavoro svolto
 
+- Aggiunta la sorgente `llm-roles-segregation` alla
+  configurazione `KNOWLEDGE_SOURCES` nel file `.env`
+  del server
+- Eseguito il deploy e la sincronizzazione con tag
+  `v0.1.0`
+- Verificati tutti i criteri di accettazione:
+  - `check_version` mostra la sorgente con 2
+    artefatti
+  - `search_knowledge` con query "segregazione
+    ruoli" restituisce la guida
+  - `get_skill` con nome
+    "arricchimento-segregazione-ruoli" restituisce
+    lo skill
+  - `list_skills` include lo skill nella lista
+
 ### Deviazioni
+
+Il path degli artefatti indicato nella RFC
+(`project/artefatti/`) non corrispondeva alla
+struttura effettiva del repository, dove gli
+artefatti si trovano in `artefatti/`. La
+registrazione è stata eseguita con il path
+corretto.
