@@ -6,6 +6,7 @@
 **A**: Team hodos / mcp-operations
 **Questione di origine**: QUESTIONE-002 — Incongruenze
 nel server mcp-operations rilevate durante l'uso
+**Natura**: informativa — non si attende risposta
 
 ## Contesto
 
@@ -107,15 +108,6 @@ introduce rischio di errori non rilevati.
 
 ---
 
-## Response RFC
-
-**Data risposta**:
-**Stato**:
-**Da**:
-**A**:
-
-### Decisione
-
-### Lavoro svolto
-
-### Deviazioni
+**Nota**: questa RFC è informativa. Viene consegnata
+a titolo di segnalazione, senza attesa di risposta.
+La questione di origine viene chiusa alla consegna.

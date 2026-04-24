@@ -7,6 +7,7 @@
 **Questione di origine**: QUESTIONE-004 — Lacune nel
 knowledge base Hodos che inducono l'agente a redigere
 RFC non conformi
+**Natura**: informativa — non si attende risposta
 
 ## Contesto
 
@@ -179,15 +180,6 @@ classe di errori sistematica.
 
 ---
 
-## Response RFC
-
-**Data risposta**:
-**Stato**:
-**Da**:
-**A**:
-
-### Decisione
-
-### Lavoro svolto
-
-### Deviazioni
+**Nota**: questa RFC è informativa. Viene consegnata
+a titolo di segnalazione, senza attesa di risposta.
+La questione di origine viene chiusa alla consegna.

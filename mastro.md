@@ -1,5 +1,43 @@
 # Mastro — Segregazione Ruoli LLM
 
+## 2026-04-24 — Chiusura QUESTIONE-004: Lacune nel knowledge base Hodos che inducono l'agente a redigere RFC non conformi
+
+**Questione**: QUESTIONE-004 — Lacune nel knowledge base Hodos che inducono l'agente a redigere RFC non conformi
+
+**Percorso**
+
+Aperta dopo autovalutazione degli errori di conformità commessi nella redazione delle RFC. Identificate quattro lacune nel knowledge base: naming file RFC non documentato, assenza checklist outbound, retrieval template non presidiato, frontmatter skill incompleto nella procedura arricchimenti esterni. Consegnata RFC informativa Q004 al team Hodos.
+
+**Decisioni prese**
+
+Segnalazione consegnata come RFC informativa senza attesa di risposta. Le lacune sono nel knowledge base Hodos e la loro risoluzione è a carico del team Hodos.
+
+**Impatto**
+
+Creata rfc/rfc-Q004-lacune-knowledge-base.md con quattro lacune documentate e suggerimenti di integrazione.
+
+---
+
+
+## 2026-04-24 — Chiusura QUESTIONE-002: Incongruenze nel server mcp-operations rilevate durante l'uso
+
+**Questione**: QUESTIONE-002 — Incongruenze nel server mcp-operations rilevate durante l'uso
+
+**Percorso**
+
+Aperta durante i primi utilizzi di mcp-operations. Raccolte due incongruenze (update_stato non sincronizza indice, date in UTC anziché fuso orario locale) e confermata la causa del problema delle date (container in UTC, fuso orario operatore UTC+2). Consegnata RFC informativa Q002 al team mcp-operations.
+
+**Decisioni prese**
+
+Segnalazione consegnata come RFC informativa senza attesa di risposta. Le correzioni manuali restano necessarie fino alla risoluzione da parte del team mcp-operations.
+
+**Impatto**
+
+Creata rfc/rfc-Q002-incongruenze-mcp-operations.md con le incongruenze documentate e la conferma della causa.
+
+---
+
+
 ## 2026-04-24 — Chiusura QUESTIONE-001: RFC inbound Q133: progettazione arricchimento segregazione ruoli LLM
 
 **Questione**: QUESTIONE-001 — RFC inbound Q133: progettazione arricchimento segregazione ruoli LLM
