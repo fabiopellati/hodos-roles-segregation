@@ -4,11 +4,13 @@
 
 | ID | Titolo | Stato |
 |---|---|---|
+| QUESTIONE-004 | Lacune nel knowledge base Hodos che inducono l'agente a redigere RFC non conformi | pending-rfc |
+| QUESTIONE-003 | Registrazione sorgente llm-roles-segregation in hodos-mcp | pending-rfc |
 | QUESTIONE-002 | Incongruenze nel server mcp-operations rilevate durante l'uso | open |
 | QUESTIONE-001 | RFC inbound Q133: progettazione arricchimento segregazione ruoli LLM | in-progress |
 
 
-> Ultima questione inserita: QUESTIONE-002 — 2026-04-24.
+> Ultima questione inserita: QUESTIONE-004 — 2026-04-24.
 > Ultima questione chiusa: —
 
 ## QUESTIONE-001 — RFC inbound Q133: progettazione arricchimento segregazione ruoli LLM
@@ -253,6 +255,48 @@ una modalità ambientale, non un obbligo.
 
 ---
 
+## QUESTIONE-004 — Lacune nel knowledge base Hodos che inducono l'agente a redigere RFC non conformi
+
+**Tipo**: rilievo
+**Stato**: pending-rfc
+
+**Storia**
+
+- 2026-04-24 pending-rfc — Le lacune sono nel knowledge base Hodos, serve intervento del team Hodos tramite RFC
+- 2026-04-24 open — Lacune nel knowledge base Hodos che inducono l'agente a redigere RFC non conformi
+
+**Descrizione**
+
+Durante la redazione di RFC outbound l'agente ha commesso errori ripetuti di conformità al protocollo: documento a forma libera anziché da template, RFC senza questione di origine, naming del file non convenzionale, questione non portata a pending-rfc prima della generazione. L'analisi delle cause ha evidenziato lacune nel knowledge base che rendono il workflow difficile da seguire per l'agente: assenza della convenzione di naming dei file RFC, assenza di una checklist operativa per il flusso outbound, assenza di una norma che imponga il retrieval del template prima della redazione.
+
+**Impatto**
+
+- knowledge base hodos — template RFC, guide operative e norme AI potrebbero essere integrati per prevenire errori di conformità dell'agente
+
+**Questioni collegate**: QUESTIONE-003
+
+---
+
+
+## QUESTIONE-003 — Registrazione sorgente llm-roles-segregation in hodos-mcp
+
+**Tipo**: revisione
+**Stato**: pending-rfc
+
+**Storia**
+
+- 2026-04-23 pending-rfc — La registrazione della sorgente richiede intervento del team hodos-mcp, si genera RFC outbound
+- 2026-04-24 open — Registrazione sorgente llm-roles-segregation in hodos-mcp
+
+**Descrizione**
+
+L'arricchimento segregazione-ruoli è stato progettato e i suoi artefatti sono pubblicati nel repository con tag v0.1.0. Per renderlo disponibile nel knowledge base hodos-mcp è necessario che il team hodos-mcp registri la sorgente nel server. Questa operazione richiede intervento esterno tramite RFC.
+
+**Questioni collegate**: QUESTIONE-001
+
+---
+
+
 ## QUESTIONE-002 — Incongruenze nel server mcp-operations rilevate durante l'uso
 
 **Tipo**: anomalia
@@ -268,7 +312,7 @@ Durante i primi utilizzi del server mcp-operations in un'opera Hodos reale sono 
 
 **Impatto**
 
-- rfc/rfc-mcp-operations-incongruenze.md — RFC outbound da compilare con le incongruenze raccolte e da inoltrare al team mcp-operations
+- rfc/rfc-Q002-incongruenze-mcp-operations.md — RFC outbound da compilare con le incongruenze raccolte e da inoltrare al team mcp-operations
 
 ---
 

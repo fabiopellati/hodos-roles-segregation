@@ -1,5 +1,6 @@
 ---
 tipo-artefatto: skill
+skill: arricchimento-segregazione-ruoli
 documento: arricchimento-segregazione-ruoli
 descrizione: >-
   Istruzioni operative per la segregazione dei ruoli

@@ -1,6 +1,7 @@
 # RFC — QUESTIONE-002
 
 **Data**: 2026-04-24
+**Commit generazione**: bb8db23
 **Da**: Team hodos-enrichment / llm-roles-segregation
 **A**: Team hodos / mcp-operations
 **Questione di origine**: QUESTIONE-002 — Incongruenze
